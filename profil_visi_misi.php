@@ -1,10 +1,33 @@
+<?php
+// Include database connection
+include 'config/database.php';
+
+// Ambil data visi misi
+$query = "SELECT * FROM visi_misi WHERE id = 1";
+$result = mysqli_query($conn, $query);
+$data = mysqli_fetch_assoc($result);
+
+// Jika data tidak ditemukan, tampilkan data default
+if (!$data) {
+    $data = [
+        'visi' => 'Mewujudkan Generasi Qur\'ani yang Cerdas, Berakhlak Mulia, dan Mandiri',
+        'misi' => '<ul>
+                    <li>Menyelenggarakan pendidikan dasar Islam yang mampu menghasilkan lulusan yang berakhlak mulia, cinta Al-Qur\'an, dan memiliki kemampuan akademik yang optimal</li>
+                    <li>Menyelenggarakan pendidikan dasar Islam yang mampu membekali siswa dengan pengetahuan dan keterampilan dasar yang dibutuhkan untuk melanjutkan ke jenjang pendidikan yang lebih tinggi</li>
+                    <li>Menyelenggarakan pendidikan dasar Islam yang mampu menghasilkan lulusan yang mandiri dan memiliki semangat juang tinggi</li>
+                    <li>Menyelenggarakan pendidikan dasar Islam yang mampu menghasilkan lulusan yang memiliki keberanian, ketangguhan, dan mampu berkompetisi secara global</li>
+                </ul>'
+    ];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edukon</title>
+    <title>Visi Misi - SDIT Luqman Al Hakim Sleman</title>
     <link rel="shortcut icon" href="assets/images/x-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -74,14 +97,9 @@
                             <div class="course-inner">
                                 <div class="course-content">
                                     <h3>Visi</h3>
-                                    <p>"Mewujudkan Generasi Qur'ani yang Cerdas, Berakhlak Mulia, dan Mandiri"</p>
+                                    <p><?php echo $data['visi']; ?></p>
                                     <h4>Misi</h4>
-                                    <ul>
-                                        <li>Menyelenggarakan pendidikan dasar Islam yang mampu menghasilkan lulusan yang berakhlak mulia, cinta Al-Qur'an, dan memiliki kemampuan akademik yang optimal</li>
-                                        <li>Menyelenggarakan pendidikan dasar Islam yang mampu membekali siswa dengan pengetahuan dan keterampilan dasar yang dibutuhkan untuk melanjutkan ke jenjang pendidikan yang lebih tinggi</li>
-                                        <li>Menyelenggarakan pendidikan dasar Islam yang mampu menghasilkan lulusan yang mandiri dan memiliki semangat juang tinggi</li>
-                                        <li>Menyelenggarakan pendidikan dasar Islam yang mampu menghasilkan lulusan yang memiliki keberanian, ketangguhan, dan mampu berkompetisi secara global</li>
-                                    </ul>
+                                    <?php echo $data['misi']; ?>
                                 </div>
                             </div>
                         </div>

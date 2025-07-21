@@ -1,10 +1,39 @@
+<?php
+// Include database connection
+include 'config/database.php';
+
+// Ambil data kurikulum
+$query = "SELECT * FROM kurikulum WHERE id = 1";
+$result = mysqli_query($conn, $query);
+$data = mysqli_fetch_assoc($result);
+
+// Jika data tidak ditemukan, tampilkan data default
+if (!$data) {
+    $data = [
+        'judul' => 'Kurikulum SDIT Luqman Al Hakim Sleman',
+        'deskripsi' => 'Kurikulum yang diterapkan di SDIT Luqman Al Hakim Sleman merupakan perpaduan antara Kurikulum Nasional dan Kurikulum Kekhasan Sekolah Islam',
+        'konten' => '<h4>Kurikulum Nasional</h4>
+                    <p>SDIT Luqman Al Hakim Sleman menerapkan Kurikulum Nasional sesuai dengan ketentuan pemerintah yang mencakup mata pelajaran wajib seperti Matematika, Bahasa Indonesia, IPA, IPS, dan lainnya.</p>
+                    
+                    <h4>Kurikulum Kekhasan</h4>
+                    <p>Sebagai sekolah Islam, kami memiliki kurikulum kekhasan yang meliputi:</p>
+                    <ul>
+                    <li>Tahfidz Al-Qur\'an</li>
+                    <li>Bahasa Arab</li>
+                    <li>Pendidikan Akhlak</li>
+                    <li>Praktik Ibadah</li>
+                    </ul>'
+    ];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kurikulum</title>
+    <title>Kurikulum - SDIT Luqman Al Hakim Sleman</title>
     <link rel="shortcut icon" href="assets/images/x-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="assets/css/animate.css">
@@ -73,55 +102,10 @@
                         <div class="course-item">
                             <div class="course-inner">
                                 <div class="course-content">
-                                    <h3>Kurikulum SDIT Luqman Al Hakim Sleman</h3>
-                                    <p>SDIT Luqman Al Hakim Sleman mengimplementasikan kurikulum terpadu yang mengintegrasikan Kurikulum Nasional (K13) dengan nilai-nilai Islam dan program khusus yang menjadi keunggulan sekolah.</p>
+                                    <h3><?php echo $data['judul']; ?></h3>
+                                    <p><?php echo $data['deskripsi']; ?></p>
                                     
-                                    <h4>Komponen Kurikulum</h4>
-                                    <ol>
-                                        <li><strong>Kurikulum Nasional (K13)</strong>
-                                            <p>Memenuhi standar kompetensi nasional dengan pendekatan tematik integratif yang menekankan pada aspek sikap, pengetahuan, dan keterampilan.</p>
-                                        </li>
-                                        <li><strong>Kurikulum Keislaman</strong>
-                                            <p>Meliputi pembelajaran Al-Qur'an (tahsin dan tahfidz), Hadits, Aqidah, Akhlak, Fiqih, dan Sirah Nabawiyah yang diintegrasikan dalam kehidupan sehari-hari.</p>
-                                        </li>
-                                        <li><strong>Program Pengembangan Karakter</strong>
-                                            <p>Fokus pada pembentukan 10 karakter utama: jujur, disiplin, tanggung jawab, mandiri, berani, percaya diri, kreatif, peduli, hormat, dan santun.</p>
-                                        </li>
-                                    </ol>
-
-                                    <h4>Program Unggulan</h4>
-                                    <ul>
-                                        <li><strong>Tahfidzul Qur'an</strong> - Program menghafal Al-Qur'an dengan target minimal 3 juz selama 6 tahun</li>
-                                        <li><strong>Bahasa Arab & Inggris</strong> - Penguasaan bahasa asing sejak dini</li>
-                                        <li><strong>Sains & Teknologi</strong> - Pembelajaran berbasis eksperimen dan proyek</li>
-                                        <li><strong>Leadership & Entrepreneurship</strong> - Pengembangan jiwa kepemimpinan dan kewirausahaan</li>
-                                        <li><strong>Outdoor Learning</strong> - Pembelajaran di luar kelas untuk mengembangkan kecintaan pada alam dan lingkungan</li>
-                                    </ul>
-
-                                    <h4>Pendekatan Pembelajaran</h4>
-                                    <p>SDIT Luqman Al Hakim Sleman menerapkan pendekatan pembelajaran yang:</p>
-                                    <ul>
-                                        <li>Berpusat pada siswa (student-centered learning)</li>
-                                        <li>Berbasis aktivitas (active learning)</li>
-                                        <li>Kontekstual dan bermakna</li>
-                                        <li>Mengintegrasikan nilai-nilai Islam dalam setiap mata pelajaran</li>
-                                        <li>Mengembangkan keterampilan berpikir tingkat tinggi (HOTS)</li>
-                                        <li>Memanfaatkan teknologi informasi</li>
-                                    </ul>
-
-                                    <h4>Sistem Evaluasi</h4>
-                                    <p>Evaluasi pembelajaran dilakukan secara komprehensif meliputi:</p>
-                                    <ul>
-                                        <li>Penilaian harian</li>
-                                        <li>Penilaian tengah semester</li>
-                                        <li>Penilaian akhir semester</li>
-                                        <li>Penilaian portofolio</li>
-                                        <li>Penilaian proyek</li>
-                                        <li>Penilaian karakter</li>
-                                        <li>Penilaian tahfidz Al-Qur'an</li>
-                                    </ul>
-
-                                    <p>Dengan kurikulum terpadu ini, SDIT Luqman Al Hakim Sleman berkomitmen untuk mewujudkan visinya dalam membentuk generasi Qur'ani yang cerdas, berakhlak mulia, dan mandiri.</p>
+                                    <?php echo $data['konten']; ?>
                                 </div>
                             </div>
                         </div>
