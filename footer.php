@@ -1,0 +1,123 @@
+    <footer class="style-2 yellow-color-section">
+        <div class="footer-top padding-tb">
+            <div class="container">
+                <div class="row g-4 row-cols-xl-4 row-cols-sm-2 row-cols-1 justify-content-center">
+                    <div class="col">
+                        <div class="footer-item our-address">
+                            <div class="footer-inner">
+                                <div class="footer-content">
+                                    <div class="title">
+                                        <img src="assets/images/logo/01.png" alt="education">
+                                    </div>
+                                    <div class="content">
+                                        <p>SDIT Luqman Al Hakim Sleman is a leading Islamic elementary school that integrates the national curriculum with Qur’anic values and Islamic character education.<br>We are committed to nurturing a Qur’anic generation—intelligent, noble in character, independent, and ready to face the future.</p>
+                                        <ul class="lab-ul office-address">
+                                            <li><i class="icofont-google-map"></i>New Elefent Road, Dhaka.</li>
+                                            <li><i class="icofont-phone"></i>+880 123 456 789</li>
+                                            <li><i class="icofont-envelope"></i>info@Edukon.com</li>
+                                        </ul>
+                                        <ul class="lab-ul social-icons">
+                                            <li>
+                                                <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="pinterest"><i class="icofont-pinterest"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <div class="footer-inner">
+                                <div class="footer-content">
+                                    <div class="title">
+                                        <h4>Courses</h4>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="lab-ul">
+                                            <li><a href="#">All Courses</a></li>
+                                            <li><a href="#">Forms and Admision materials</a></li>
+                                            <li><a href="#">Professional Courses</a></li>
+                                            <li><a href="#">Course Outline</a></li>
+                                            <li><a href="#">Policy</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">Online Course</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item">
+                            <div class="footer-inner">
+                                <div class="footer-content">
+                                    <div class="title">
+                                        <h4>Quick Links</h4>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="lab-ul">
+                                            <li><a href="#">Summer Sessions</a></li>
+                                            <li><a href="#">Events</a></li>
+                                            <li><a href="#">Gallery</a></li>
+                                            <li><a href="#">Forums</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms of Use</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="footer-item twitter-post">
+                            <div class="footer-inner">
+                                <div class="footer-content">
+                                    <div class="title">
+                                        <h4>Recent Tweets</h4>
+                                    </div>
+                                    <div class="content">
+                                        <ul class="lab-ul">
+                                            <li>
+                                                <i class="icofont-twitter"></i>
+                                                <p>Somrat islam <a href="#">@CodexCoder Edukon #HTML_Template</a> Grab your item, 50% Big Sale Offer !!</p>
+                                            </li>
+                                            <li>
+                                                <i class="icofont-twitter"></i>
+                                                <p>Somrat islam <a href="#">@CodexCoder Edukon #HTML_Template</a> Grab your item, 50% Big Sale Offer !!</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="section-wrapper">
+                    <p>&copy; 2021 <a href="index.html">Edukon</a> Designed by <a href="https://themeforest.net/user/CodexCoder" target="_blank">CodexCoder</a> </p>
+                    <div class="footer-bottom-list">
+                        <a href="#">Faculty</a>
+                        <a href="#">Staff</a>
+                        <a href="#">Students</a>
+                        <a href="#">Alumni</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
