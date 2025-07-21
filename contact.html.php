@@ -47,7 +47,7 @@
                         <h2>Hubungi Kami</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Kontak</li>
                             </ol>
                         </nav>
@@ -116,7 +116,7 @@
                 <h2 class="title">Silakan Mengisi Form di Bawah Ini</h2>
             </div>
             <div class="section-wrapper">
-                <form class="contact-form" action="contact-process.php" method="POST">
+                <form class="contact-form" action="contact.php" method="POST">
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Nama Lengkap *" required>
                     </div>
@@ -172,4 +172,4 @@
     <script src="assets/js/isotope.pkgd.js"></script>
     <script src="assets/js/functions.js"></script>
 </body>
-</html>
+</html> 

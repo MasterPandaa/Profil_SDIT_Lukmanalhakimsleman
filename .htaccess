@@ -1,0 +1,15 @@
+DirectoryIndex index.php index.html
+
+# Enable rewriting
+RewriteEngine On
+
+# If the requested file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect all requests to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# PHP error handling
+php_flag display_errors on
+php_value error_reporting E_ALL 

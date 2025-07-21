@@ -110,7 +110,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="section-wrapper">
-                    <p>&copy; 2021 <a href="index.html">Edukon</a> Designed by <a href="https://themeforest.net/user/CodexCoder" target="_blank">CodexCoder</a> </p>
+                    <p>&copy; 2021 <a href="index.php">Edukon</a> Designed by <a href="https://themeforest.net/user/CodexCoder" target="_blank">CodexCoder</a> </p>
                     <div class="footer-bottom-list">
                         <a href="#">Faculty</a>
                         <a href="#">Staff</a>

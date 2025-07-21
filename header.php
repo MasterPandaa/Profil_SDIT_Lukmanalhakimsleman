@@ -25,35 +25,35 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo/01.png" alt="logo"></a>
+                        <a href="index.php"><img src="assets/images/logo/01.png" alt="logo"></a>
                     </div>
                     <div class="menu-area">
                         <div class="menu">
                             <ul class="lab-ul">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="index.php">Home</a>
                                 </li>
                                 <li>
                                     <a href="#0">Profil</a>
                                     <ul class="lab-ul">
-                                        <li><a href="profil_visi_misi.html">Visi Misi</a></li>
-                                        <li><a href="profil_sambutan_kepsek.html">Sambutan Kepala Sekolah</a></li>
-                                        <li><a href="profil_kurikulum.html">Kurikulum</a></li>
-                                        <li><a href="profil_indikator_kelulusan.html">Indikator kelulusan</a></li>
+                                        <li><a href="profil_visi_misi.php">Visi Misi</a></li>
+                                        <li><a href="profil_sambutan_kepsek.php">Sambutan Kepala Sekolah</a></li>
+                                        <li><a href="profil_kurikulum.php">Kurikulum</a></li>
+                                        <li><a href="profil_indikator_kelulusan.php">Indikator kelulusan</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#0">About</a>
                                     <ul class="lab-ul">
-                                        <li><a href="404.html">Prestasi</a></li>
-                                        <li><a href="404.html">Ekstakulikuer</a></li>
-                                        <li><a href="404.html">Fasilitas</a></li>
-                                        <li><a href="404.html">Galeri</a></li>
-                                        <li><a href="404.html">Alumni</a></li>
-                                        <li><a href="404.html">Artikel</a></li>
+                                        <li><a href="404.php">Prestasi</a></li>
+                                        <li><a href="404.php">Ekstakulikuer</a></li>
+                                        <li><a href="404.php">Fasilitas</a></li>
+                                        <li><a href="404.php">Galeri</a></li>
+                                        <li><a href="404.php">Alumni</a></li>
+                                        <li><a href="404.php">Artikel</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                         
